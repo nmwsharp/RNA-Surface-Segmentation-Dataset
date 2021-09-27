@@ -1,6 +1,6 @@
 # RNA Surface Segmentation Dataset
 
-This dataset contains 640 triangulated surface meshes of the molecular envelopes for RNA molecules, gathered from the PDB database. Each vertex is assigned a ground-truth segmentation label according to one of 260 functional categories (see the quoted blurb below for a full description of the meaning and collection process). We use this data as a representative task for 3D machine learning on surfaces, predicting the functional segmentation from only the molecule shape.
+This dataset contains 640 triangulated surface meshes of the molecular envelopes for RNA molecules, gathered from the PDB database. Each vertex is assigned a ground-truth segmentation label according to ~120 functional categories (see the quoted blurb below for a full description and collection process). We use this data as a representative task for 3D machine learning on surfaces, predicting the functional segmentation from only the molecule surface shape.
 
 
 From: **Effective Rotation-invariant Point CNN with Spherical Harmonics Kernels**, *Adrien Poulenard, Marie-Julie Rakotosaona, Yann Ponty, Maks Ovsjanikov*, in 3DV 2019.
@@ -17,7 +17,12 @@ Please cite this dataset as:
 }
 ```
 
+### In this repository
 
+
+
+#### Notes about the data
+- A very small number of vertices are labelled with `-1` 
 
 
 ### Full description
@@ -28,6 +33,6 @@ Please cite this dataset as:
 
 
 ### Papers using this dataset
-(create a pull request to add yours!)
+(create a pull request to add more!)
 - ["Effective Rotation-invariant Point CNN with Spherical Harmonics Kernels"](https://arxiv.org/abs/1906.11555) by Poulenard et al., 3DV 2019
 - ["DiffusionNet: Discretization Agnostic Learning on Surfaces"](https://arxiv.org/abs/2012.00888) by Sharp et al., ACM ToG 2021
