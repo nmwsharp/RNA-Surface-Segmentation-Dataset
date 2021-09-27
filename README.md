@@ -24,11 +24,11 @@ Please cite this dataset as:
 - `train.txt` / `test.txt` Lists of filenames giving a recommended 80/20 train/test split, sampled randomly.
 
 #### Notes about the data
-- The segmentation indices range from [-1,258] (a very small number of vertices are labelled as `-1`). For simplicity, we treat `-1` as an additional class, yielding 259 classes for prediction.` (note that adding 1 to the class targets yields integers on [0,259] ready for training)
+- The segmentation indices range from [-1,258] (a very small number of vertices are labelled as `-1`). For simplicity, we treat `-1` as an additional class, yielding 259 classes for prediction. (note that adding 1 to the class targets yields integers on [0,259] ready for training)
 
 - These meshes are not necessarily nice meshes! They have many disconnected components, poor-quality elements, etc. The meshes are not necessarily in any canonical alignment. These are common challenges of real data, which are important to represent in the benchmark.
 
-- In some case, you may want to remesh/resample the meshes for facilitate an experiment, such as uniformly-sampling a point cloud from the meshes. In this case, new training labels can be collected by nearest-neighbor labels on the original mesh. We strongly encourage that results be projected back to the original meshes to report accuracy, though not all past work has followed this procedure.
+- In some cases, you may want to remesh/resample the meshes for facilitate an experiment, such as uniformly-sampling a point cloud from the meshes. New training labels can be collected by nearest-neighbor labels from the original mesh. We strongly encourage that results be projected back to the original meshes to report accuracy, though not all past work has followed this procedure.
 
 
 ### Full description
