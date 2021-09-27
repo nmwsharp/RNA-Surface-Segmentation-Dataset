@@ -2,6 +2,7 @@
 
 This dataset contains 640 triangulated surface meshes of the molecular envelopes for RNA molecules, gathered from the PDB database. Each vertex is assigned a ground-truth segmentation label according to ~120 functional categories (see the quoted blurb below for a full description and collection process). We use this data as a representative task for 3D machine learning on surfaces, predicting the functional segmentation from only the molecule surface shape.
 
+![example image of RNA data](https://github.com/nmwsharp/RNA-Surface-Segmentaton-Dataset/blob/main/rna_image.png?raw=true)
 
 From: **Effective Rotation-invariant Point CNN with Spherical Harmonics Kernels**, *Adrien Poulenard, Marie-Julie Rakotosaona, Yann Ponty, Maks Ovsjanikov*, in 3DV 2019.
 
